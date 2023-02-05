@@ -1,0 +1,306 @@
+:root{
+    --main-color: #624770;
+    --tor-color: #27869f;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #777;
+    --orang-color: rgb(208, 75, 9);
+    --red-color: #210607;
+    --blue-color: #30ffb9;
+    --transition: all .5s;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* start header nav ########################## */
+
+
+/* start pop ############################### */
+.modal-body h3{
+    color: var(--red-color);
+    font-size: 30px;
+}
+.modal-body .links{
+    margin: 40px 30px;
+}
+.modal-body .links i{
+    color: var(--tor-color);
+    font-size: 30px;
+    margin: 0 30px;
+    transition: var(--transition);
+}
+.modal-body .links i:hover{
+    color: var(--orang-color);
+}
+
+.modal-body form{
+    margin-top: 30px;
+}
+.modal-body form input{
+    margin-top: 30px;
+    width: 80%;
+    padding: 7px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--tor-color);
+}
+.modal-body form .submit{
+    background-color: var(--main-color);
+    font-size: 20px;
+    color: var(--white-color);
+    transition: var(--transition);
+}
+.modal-body form .submit:hover{
+    background-color: var(--tor-color);
+}
+.modal-body p{
+    font-size: 18px;
+    color: var(--black-color);
+    margin: 20px 0;
+}
+.modal-body p span{
+    color: var(--orang-color);
+}
+/* end pop ############################### */
+
+
+/* start off convous ###################### */
+.logo i{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--tor-color);
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: auto ;
+    padding: 0;
+}
+ul li{
+    margin: 20px 0;
+}
+ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--red-color);
+    transition: var(--transition);
+}
+ul li .btn{
+    border: 1px solid var(--red-color);
+    background-color: transparent;
+    color: var(--red-color);
+    padding: 5px 15px;
+    font-size: 20px;
+    transition: var(--transition);
+}
+/* end off convous ###################### */
+header nav {
+    background-color: var(--main-color);
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    z-index: 1000;
+}
+header nav .container .logo i{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--white-color);
+    margin: 0;
+    padding: 0;
+}
+header nav .container,
+header nav .container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav .container ul{
+    margin-bottom: auto ;
+}
+header nav .container ul li{
+    margin: 0 20px;
+}
+header nav .container ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--white-color);
+    transition: var(--transition);
+}
+
+.fa-ellipsis-vertical{
+    display: none;
+    font-size: 25px;
+    color: var(--white-color);
+    cursor: pointer;
+    padding: 30px;
+}
+header nav .container ul li a:hover{
+    color: var(--black-color);
+}
+header nav .container ul li .btn{
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    color: var(--white-color);
+    padding: 5px 15px;
+    font-size: 20px;
+    transition: var(--transition);
+}
+header nav .container ul li .btn:hover{
+    background-color: var(--tor-color);
+    color: var(--white-color);
+}
+@media only screen and (max-width: 600px) {
+    header nav .container ul{
+        display: none;
+    }
+    .fa-ellipsis-vertical{
+        display: flex;
+        font-size: 40px;
+    }
+    header nav .container .logo i{
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    header nav .container ul{
+        display: none;
+    }
+    .fa-ellipsis-vertical{
+        display: flex;
+        font-size: 40px;
+    }
+    header nav .container .logo i{
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    header nav .container ul{
+        display: none;
+    }
+    .fa-ellipsis-vertical{
+        display: flex;
+    }
+    header nav .container .logo i{
+        font-size: 50px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    header nav .container ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .fa-ellipsis-vertical{
+        display: none;
+    }
+    header nav .container .logo i{
+        font-size: 40px;
+    }
+}
+/* end header nav ################################# */
+
+/* start offer ############################# */
+.offer .container{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 30px;
+}
+.offer .container .contain .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offer .container .contain .box{
+    transition: var(--transition);
+    padding: 10px 0;
+}
+.offer .container .contain .box:hover{
+    color: var(--orang-color);
+}
+.offer .container .contain .box i{
+    font-size: 25px;
+    margin: 0 10px;
+}
+.offer .container .contain .box h4{
+    font-size: 25px;
+    margin: 0;
+}
+.offer .container .contain .active{
+    border-bottom: 2px solid var(--orang-color);
+    color: var(--orang-color);
+}
+
+/* lapp ############################### */
+.offer-lab{
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.offer-lab .box{
+    text-align: center;
+    width: 150px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.offer-lab .box img{
+    width: 100%;
+    height: 150px;
+    transition: var(--transition);
+}
+.offer-lab .box:hover img{
+    transform: scale(1.1);
+}
+.offer-lab .box a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--red-color);
+    margin-top: 10px;
+    font-size: 20px;
+    transition: var(--transition);
+}
+.offer-lab .box:hover a{
+    color: var(--orang-color);
+}
+@media only screen and (max-width: 600px) {
+    .offer-lab .box{
+        width: 400px;
+        margin: 20px auto;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .offer-lab .box{
+        width: 400px;
+        margin: 20px auto;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .offer-lab .box{
+        width: 300px;
+        margin: 20px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .offer-lab .box{
+        width: 150px;
+        margin: 20px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .offer-lab .box{
+        width: 300px;
+        margin: 20px;
+    }
+}
+/* lapp ############################### */
+/* end offer ############################# */

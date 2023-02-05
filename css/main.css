@@ -1,0 +1,536 @@
+:root{
+    --main-color: #624770;
+    --tor-color: #27869f;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #777;
+    --orang-color: rgb(208, 75, 9);
+    --red-color: #210607;
+    --blue-color: #30ffb9;
+    --transition: all .5s;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f4f4;
+}
+header{
+    background: url(../images/header3.jpg) no-repeat center/cover fixed;
+}
+/* start header nav ########################## */
+
+
+/* start pop ############################### */
+.modal-body h3{
+    color: var(--red-color);
+    font-size: 30px;
+}
+.modal-body .links{
+    margin: 40px 30px;
+}
+.modal-body .links i{
+    color: var(--tor-color);
+    font-size: 30px;
+    margin: 0 30px;
+    transition: var(--transition);
+}
+.modal-body .links i:hover{
+    color: var(--orang-color);
+}
+
+.modal-body form{
+    margin-top: 30px;
+}
+.modal-body form input{
+    margin-top: 30px;
+    width: 80%;
+    padding: 7px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--tor-color);
+}
+.modal-body form .submit{
+    background-color: var(--main-color);
+    font-size: 20px;
+    color: var(--white-color);
+    transition: var(--transition);
+}
+.modal-body form .submit:hover{
+    background-color: var(--tor-color);
+}
+.modal-body p{
+    font-size: 18px;
+    color: var(--black-color);
+    margin: 20px 0;
+}
+.modal-body p span{
+    color: var(--orang-color);
+}
+/* end pop ############################### */
+
+/* start off convous ###################### */
+.logo i{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--tor-color);
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: auto ;
+    padding: 0;
+}
+ul li{
+    margin: 20px 0;
+}
+ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--red-color);
+    transition: var(--transition);
+}
+ul li .btn{
+    border: 1px solid var(--red-color);
+    background-color: transparent;
+    color: var(--red-color);
+    padding: 5px 15px;
+    font-size: 20px;
+    transition: var(--transition);
+}
+/* end off convous ###################### */
+header nav {
+    background-color: var(--main-color);
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    z-index: 1000;
+}
+header nav .container .logo i{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--white-color);
+    margin: 0;
+    padding: 0;
+}
+header nav .container,
+header nav .container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav .container ul{
+    margin-bottom: auto ;
+}
+header nav .container ul li{
+    margin: 0 20px;
+}
+header nav .container ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--white-color);
+    transition: var(--transition);
+}
+
+.fa-ellipsis-vertical{
+    display: none;
+    font-size: 25px;
+    color: var(--white-color);
+    cursor: pointer;
+    padding: 30px;
+}
+header nav .container ul li a:hover{
+    color: var(--black-color);
+}
+header nav .container ul li .btn{
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    color: var(--white-color);
+    padding: 5px 15px;
+    font-size: 20px;
+    transition: var(--transition);
+}
+header nav .container ul li .btn:hover{
+    background-color: var(--tor-color);
+    color: var(--white-color);
+}
+@media only screen and (max-width: 600px) {
+    header nav .container ul{
+        display: none;
+    }
+    .fa-ellipsis-vertical{
+        display: flex;
+        font-size: 40px;
+    }
+    header nav .container .logo i{
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    header nav .container ul{
+        display: none;
+    }
+    .fa-ellipsis-vertical{
+        display: flex;
+        font-size: 40px;
+    }
+    header nav .container .logo i{
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    header nav .container ul{
+        display: none;
+    }
+    .fa-ellipsis-vertical{
+        display: flex;
+    }
+    header nav .container .logo i{
+        font-size: 50px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    header nav .container ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .fa-ellipsis-vertical{
+        display: none;
+    }
+    header nav .container .logo i{
+        font-size: 40px;
+    }
+}
+/* end header nav ################################# */
+
+/* start header landing ########################## */
+.landing{
+    text-align: center;
+    padding: 200px 0 200px 0;
+}
+.landing h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--red-color);
+}
+.landing fieldset{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.landing fieldset i{
+    position: absolute;
+    color: #000;
+    top: 18px;
+    left: 250px;
+    z-index: 11;
+    color: var(--gray-color);
+    transition: var(--transition);
+}
+.landing fieldset i:hover{
+    color: var(--orang-color);
+}
+.landing fieldset input{
+    padding: 10px 30px;
+    width: 40%;
+    border:1px solid var(--main-color);
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+}
+.landing fieldset a{
+    text-decoration: none;
+    padding: 11px 20px;
+    width: 10%;
+    margin: 0 10px;
+    border:none;
+    color: var(--white-color);
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--main-color);
+    transition: var(--transition);
+}
+.landing fieldset button:hover{
+    background-color: var(--tor-color);
+    color: var(--black-color);
+}
+@media only screen and (max-width: 600px) {
+    .landing fieldset{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .landing fieldset input{
+        width: 100%;
+        margin: 20px 0
+    }
+    .landing fieldset a{
+        width: 40%;
+    }
+    .landing fieldset i{
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .landing fieldset{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .landing fieldset input{
+        width: 100%;
+        margin: 20px 0
+    }
+    .landing fieldset a{
+        width: 40%;
+    }
+    .landing fieldset i{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .landing fieldset{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .landing fieldset input{
+        width: 100%;
+        margin: 20px 0
+    }
+    .landing fieldset a{
+        width: 40%;
+    }
+    .landing fieldset i{
+        display: none;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .landing fieldset{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .landing fieldset input{
+        width: 40%;
+        margin: 20px 0
+    }
+    .landing fieldset a{
+        width: 10%;
+    }
+    .landing fieldset i{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .landing fieldset i{
+        display: block;
+        top: 35px;
+        font-size: 20px;
+        left: 280px;
+    }
+}
+
+/* end header landing ########################## */
+
+
+/* start away ######################### */
+.away{
+    padding: 70px 0;
+}
+.away .container{
+    text-align: center;
+}
+.away .container h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.away .container p{
+    color: var(--gray-color);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.away .container .box img{
+    transition: var(--transition);
+}
+.away .container .box img:hover{
+    transform: translatey(-10px);
+    cursor: pointer;
+}
+/* end away ######################### */
+
+/* start lab ################# */
+.lab{
+    padding: 70px 0;
+}
+.lab .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.lab .container .box{
+    margin: 20px;
+}
+.lab .container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+    .lab .container{
+        flex-direction: column;
+    }
+    .lab .container .box,
+    .lab .container .box .card{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .lab .container{
+        flex-direction: column;
+    }
+    .lab .container .box,
+    .lab .container .box .card{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .lab .container{
+        flex-direction: column;
+    }
+    .lab .container .box,
+    .lab .container .box .card{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .lab .container{
+        flex-direction: row;
+    }
+    .lab .container .box,
+    .lab .container .box .card{
+        width: 300px;
+    }
+}
+/* end lab ################# */
+
+
+/* start Join ############################ */
+.Join{
+    padding: 70px 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, var(--tor-color), var(--blue-color));
+}
+.Join h2{
+    font-size: 40px;
+}
+.Join p{
+    font-size: 20px;
+}
+.Join .container{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Join .container .box{
+    margin: 20px;
+}
+.Join .container .box .card h5{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.Join .container .box .card p{
+    font-size: 20px;
+    color: var(--gray-color);
+}
+.Join .container .box .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+    .Join .container{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .Join .container{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .Join .container{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .Join .container{
+        flex-direction: row;
+    }
+}
+/* end Join ########################## */
+
+/* start Cities ######################### */
+.Cities{
+    padding: 70px 0;
+}
+.Cities .container .contain{
+    margin: 30px 0;
+}
+.Cities .container .contain,
+.Cities .container .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.Cities .container .box{
+    width: 300px;
+    padding: 20px;
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    transition: var(--transition);
+    margin: 10px;
+}
+.Cities .container .box i,
+.Cities .container .box:hover h3{
+    transition: var(--transition);
+}
+.Cities .container .box:hover i{
+    transform: translate(10px);
+    color: var(--orang-color);
+}
+.Cities .container .box:hover h3{
+    color: var(--orang-color);
+}
+@media only screen and (min-width: 600px) {
+    .Cities .container .box{
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .Cities .container .box{
+        width: 250px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .Cities .container .box{
+        width: 300px;
+    }
+}
+/* end Cities ######################### */

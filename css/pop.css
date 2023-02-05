@@ -1,0 +1,41 @@
+.modal-body h3{
+    color: var(--red-color);
+    font-size: 30px;
+}
+.modal-body .links{
+    margin: 30px;
+}
+.modal-body .links i{
+    color: var(--blue-color);
+    font-size: 30px;
+    margin: 0 30px;
+    transition: var(--transtion);
+}
+.modal-body .links i:hover{
+    color: var(--orang-color);
+}
+
+.modal-body form{
+    margin-top: 30px;
+}
+.modal-body form input{
+    margin-top: 30px;
+    width: 80%;
+    padding: 7px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--blue-color);
+}
+.modal-body form .submit{
+    background-color: var(--orang-color);
+    font-size: 25px;
+    color: var(--white-color);
+}
+.modal-body p{
+    font-size: 18px;
+    color: var(--black-color);
+    margin: 20px 0;
+}
+.modal-body p span{
+    color: var(--orang-color);
+}
